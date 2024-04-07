@@ -35,7 +35,7 @@ This project aims to help A Nyar Hti - Lottery, helping Myanmar's Spring Revolut
   
 **Lottery Ticket Selling**:
 - Form to apply for lottery tickets.
-- Generate random or user-specified ticket numbers. The server will check for existing ticket numbers and if it is new, it will continue next step.
+- Generate random or user-specified ticket numbers. The server will check for existing ticket numbers and if it is new, it will continue to next step.
 - Store ticket information in Firebase database.
 
 **Lottery Ticket Generation**:
