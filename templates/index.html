@@ -1,0 +1,155 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>အညာထီ</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
+    <style>
+        .card{
+            width: 18rem;
+            margin-top: 50px;
+            margin-left: 50px;
+            border-radius: 20px;
+            flex: 1;
+        }
+        #navbar_flag_myanmar{
+            padding: 15px 25px;
+            margin-right: 50px;
+        }
+        #content{
+            margin-bottom: 100px;
+        }
+        #header-container{
+            margin-top: 10px;
+        }
+        #bagan_sunset{
+            position: relative;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            border-radius: 50px;
+        }
+        #headline_text{
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            font-size: 4em;
+            font-weight: 900;
+            color: whitesmoke;
+        }
+        #headline_subheading{
+            position: absolute;
+            top: 60%;
+            left: 10%;
+            font-size: 1.5em;
+            font-weight: 100;
+            color: whitesmoke;
+        }
+        #prizes{
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    {% include "header.html" %}
+    
+    <header class="container-fluid" id="header_container">
+        <img class="header-img rounded-50px" src="{{ url_for('static', filename='images/bagan.png') }}" alt="Bagan Image" id="bagan_sunset"/>
+        <h1 class="text-over-image" id="headline_text">Support the Spring Revolution</h1>
+        <h5 class="text-over-image" id="headline_subheading">Win amazing prizes in our lottery while helping to fund the fight for democracy in Myanmar.</h5>
+    </header>
+        
+    <div class="container-fluid" id="content">
+        <div class="row">
+            <div class="col-4 col-md-12 col-lg-4">
+                <div class="card">
+                    <img src="{{ url_for('static', filename='images/lottery_logo.jpeg') }}" class="card-img-top" alt="lottery_logo" style="border-radius: 20px;">
+                    <div class="card-body">
+                    <h5 class="card-title">အညာထီ</h5>
+                    <p class="card-text">တပ်ပေါင်းစုချီအညာထီ</p>
+                    <div class="d-flex justify-content-center align-items-center"><a href="#" class="btn btn-primary">Coming Soon...</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-md-12 col-lg-8">
+                <div class="row">
+                    <h2 style="text-align: center; padding-top: 50px;">ဆုကြေးငွေ</h2>
+                </div>
+                <div class="row" id="prizes">
+                    <div class="col-4">
+                        <h5>ဆုသက်မှတ်ချက်ပုံစံ</h5>
+                    </div>
+                    <div class="col-4">
+                        <h5>ဆုပေးအပ်မည့်ငွေပမာဏ</h5>
+                    </div>
+                    <div class="col-4">
+                        <h5>ဆုအရေအတွက်</h5>
+                    </div>
+                </div>
+                <div class="row" id="prizes">
+                    <div class="col-4">
+                        <a>ပထမဆုကြီး</a>
+                    </div>
+                    <div class="col-4">
+                        <a>သိန်း ၅၀ ကျပ်</a>
+                    </div>
+                    <div class="col-4">
+                        <a>၁ ဆု</a>
+                    </div>
+                </div>
+                <div class="row" id="prizes">
+                    <div class="col-4">
+                        <a>ဒုတိယဆုကြီး</a>
+                    </div>
+                    <div class="col-4">
+                        <a>၁၀ သိန်း ကျပ်</a>
+                    </div>
+                    <div class="col-4">
+                        <a>၁ ဆု</a>
+                    </div>
+                </div>
+                <div class="row" id="prizes">
+                    <div class="col-4">
+                        <a>တတိယဆုကြီး</a>
+                    </div>
+                    <div class="col-4">
+                        <a>၅ သိန်း ကျပ်</a>
+                    </div>
+                    <div class="col-4">
+                        <a>၁ ဆု</a>
+                    </div>
+                </div>
+                <div class="row" id="prizes">
+                    <div class="col-4">
+                        <a>တတိယဆုကြီး</a>
+                    </div>
+                    <div class="col-4">
+                        <a>၅ သိန်း ကျပ်</a>
+                    </div>
+                    <div class="col-4">
+                        <a>၁ ဆု</a>
+                    </div>
+                </div>
+                <div class="row" id="prizes">
+                    <div class="col-4">
+                        <a>စတုတ္ထဆု (သို့) နှစ်သိမ့်ဆု</a>
+                    </div>
+                    <div class="col-4">
+                        <a>၅ သောင်း ကျပ်</a>
+                    </div>
+                    <div class="col-4">
+                        <a>၁၀ ဆု</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include "footer.html" %}
+</body>
+</html>
